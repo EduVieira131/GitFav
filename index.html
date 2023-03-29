@@ -7,6 +7,7 @@
     <title>Git Fav</title>
 
     <link rel="stylesheet" href="style.css" />
+    <script src="./js/main.js" type="module" defer></script>
   </head>
   <body>
     <div id="app">
@@ -23,7 +24,7 @@
             placeholder="Digite o Github username que quer favoritar"
           />
 
-          <button>
+          <button class="addButton">
             <svg
               width="24"
               height="24"
@@ -52,38 +53,7 @@
             </tr>
           </thead>
 
-          <tbody>
-            <tr>
-              <td class="user">
-                <div class="user-wrapper">
-                  <img src="https://github.com/EduVieira131.png" alt="" />
-
-                  <a href="#">
-                    <p>Eduardo Vieira</p>
-                    <span>/EduVieira131</span>
-                  </a>
-                </div>
-              </td>
-              <td class="repositories">30</td>
-              <td class="followers">1000</td>
-              <td><button class="removeItem">Remover</button></td>
-            </tr>
-            <tr>
-              <td class="user">
-                <div class="user-wrapper">
-                  <img src="https://github.com/EduVieira131.png" alt="" />
-
-                  <a href="#">
-                    <p>Eduardo Vieira</p>
-                    <span>/EduVieira131</span>
-                  </a>
-                </div>
-              </td>
-              <td class="repositories">30</td>
-              <td class="followers">1000</td>
-              <td><button class="removeItem">Remover</button></td>
-            </tr>
-          </tbody>
+          <tbody></tbody>
         </table>
       </div>
     </div>

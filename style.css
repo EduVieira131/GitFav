@@ -44,6 +44,7 @@ body * {
 
 #app {
   max-width: 112rem;
+  min-width: 90rem;
   margin-block: 4.5rem;
 }
 
@@ -70,6 +71,7 @@ table {
   line-height: 160%;
 
   border-collapse: collapse;
+  border: 1px solid var(--td-border);
 }
 
 table * {
@@ -143,7 +145,7 @@ table * {
 
   background: var(--button-bg);
   cursor: pointer;
-  transition: all 500ms;
+  transition: all 300ms;
 }
 
 .searchWrapper button svg {
@@ -238,11 +240,13 @@ table tr td:last-child {
   border-bottom-right-radius: 0.4rem;
 }
 
-table tr {
+table tbody tr {
   background: var(--td-lighter);
+  border: 1px solid var(--td-border);
+
 }
 
-table tr:nth-child(odd) {
+table tbody tr:nth-child(odd) {
   background: var(--td-darker);
 }
 
