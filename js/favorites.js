@@ -11,7 +11,7 @@ export class Favorites {
   }
 
   load() {
-    this.entries = JSON.parse(localStorage.getItem('@git-fav:')) || [] 
+    this.entries = JSON.parse(localStorage.getItem('@git-fav:') || "[]") 
   }
 
   async add(username) {
