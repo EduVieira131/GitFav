@@ -43,7 +43,7 @@ body * {
 }
 
 #app {
-  max-width: 112rem;
+  width: 50%;
   min-width: 90rem;
   margin-block: 4.5rem;
 }
@@ -170,12 +170,12 @@ table thead th {
   background: var(--thead-bg);
 }
 
-table tbody td {
-  padding: 4rem 2.4rem;
+table thead th:first-child {
+  width: 50.4rem;
 }
 
-td.user {
-  width: 50.4rem;
+table tbody td {
+  padding: 4rem 2.4rem;
 }
 
 .user-wrapper {
@@ -243,7 +243,6 @@ table tr td:last-child {
 table tbody tr {
   background: var(--td-lighter);
   border: 1px solid var(--td-border);
-
 }
 
 table tbody tr:nth-child(odd) {
