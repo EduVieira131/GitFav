@@ -57,9 +57,10 @@ header {
 }
 
 .table-wrapper {
+  border: 1px solid var(--td-border);
+  border-radius: .4rem;
   max-height: 60rem;
-
-  overflow-y: auto;
+  overflow: overlay;
 }
 
 table {
@@ -71,7 +72,6 @@ table {
   line-height: 160%;
 
   border-collapse: collapse;
-  border: 1px solid var(--td-border);
 }
 
 table * {
@@ -224,25 +224,9 @@ td.removeButton {
   opacity: 0.5;
 }
 
-table th:first-child {
-  border-top-left-radius: 0.4rem;
-}
-
-table th:last-child {
-  border-top-right-radius: 0.4rem;
-}
-
-table tr td:first-child {
-  border-bottom-left-radius: 0.4rem;
-}
-
-table tr td:last-child {
-  border-bottom-right-radius: 0.4rem;
-}
-
 table tbody tr {
   background: var(--td-lighter);
-  border: 1px solid var(--td-border);
+  border-top: 1px solid var(--td-border);
 }
 
 table tbody tr:nth-child(odd) {
@@ -252,10 +236,6 @@ table tbody tr:nth-child(odd) {
 ::-webkit-scrollbar {
   width: .6rem;
   height: 10rem;
-}
-
-::-webkit-scrollbar-track {
-  background: none;
 }
 
 ::-webkit-scrollbar-thumb {
