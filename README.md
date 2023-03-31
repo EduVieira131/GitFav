@@ -34,6 +34,7 @@ Aplicativo que salva seus perfis favoritos do GitHub. Foi desenvolvido utilizand
 - Encontre usuários reais do github e salve os dados de seus perfis, tais como nome de usuário, quantidade de repositórios e de seguidores.
 - Validação de usuários já existentes.
 - Acesso rápido ao perfil do github ao clicar no nome do perfil.
+- Acesso ao localStorage, onde ficaram salvo os dados obtidos e os pefis adicionados.
 
 ---
 
