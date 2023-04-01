@@ -58,8 +58,8 @@ header {
 
 .table-wrapper {
   border: 1px solid var(--td-border);
-  border-radius: .4rem;
-  
+  border-radius: 0.4rem;
+
   max-height: 60rem;
   overflow: overlay;
 }
@@ -162,7 +162,33 @@ table * {
   fill: var(--button-bg);
 }
 
-/* || Table/body */
+/* || Table */
+
+/* Empty table */
+.background {
+  height: 48rem;
+}
+
+.background div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.background h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 2.5rem;
+  color: #4E5455;
+}
+
+.background img {
+  width: 13rem;
+  height: 12rem;
+}
+
+/* Table styles */
 table thead th {
   height: 6.4rem;
   padding: 4rem 1.6rem;
@@ -235,7 +261,7 @@ table tbody tr:nth-child(odd) {
 }
 
 ::-webkit-scrollbar {
-  width: .6rem;
+  width: 0.6rem;
   height: 10rem;
 }
 
